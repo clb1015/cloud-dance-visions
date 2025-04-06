@@ -107,7 +107,11 @@ const Events = () => {
     : allEvents.filter(event => event.type === selectedType);
   
   const featuredEvents = allEvents.filter(event => event.featured);
-  const upcomingEvents = [...allEvents].sort((a, b) => new Date(a.date) - new Date(b.date)).slice(0, 3);
+  
+  // Fix: Convert Date objects to numbers before subtraction
+  const upcomingEvents = [...allEvents]
+    .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime())
+    .slice(0, 3);
 
   return (
     <>
