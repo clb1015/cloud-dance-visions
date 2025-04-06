@@ -1,13 +1,29 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import HeroSection from "@/components/home/HeroSection";
+import FeaturedAccomplishments from "@/components/home/FeaturedAccomplishments";
+import SizzleReel from "@/components/home/SizzleReel";
+import UpcomingEvents from "@/components/home/UpcomingEvents";
+import ClassesOverview from "@/components/home/ClassesOverview";
+import StudentSpotlight from "@/components/home/StudentSpotlight";
+import DonationCTA from "@/components/home/DonationCTA";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <>
+      <Navbar />
+      <main>
+        <HeroSection />
+        <FeaturedAccomplishments />
+        <ClassesOverview />
+        <SizzleReel />
+        <StudentSpotlight />
+        <UpcomingEvents />
+        <DonationCTA />
+      </main>
+      <Footer />
+    </>
   );
 };
 
