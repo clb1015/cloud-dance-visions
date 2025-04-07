@@ -7,14 +7,12 @@ const HeroSection = () => {
     <div className="relative h-[80vh] flex items-center justify-center overflow-hidden bg-gray-900">
       {/* Background image with overlay */}
       <div 
-        className="absolute inset-0 z-0" 
+        className="absolute inset-0 z-0 bg-cover bg-center"
         style={{
-          backgroundImage: "url('/lovable-uploads/1a53fcdc-a0a3-487b-a34d-a7d862c24760.png')",
-          backgroundSize: "cover",
-          backgroundPosition: "center"
+          backgroundImage: "url('/lovable-uploads/1a53fcdc-a0a3-487b-a34d-a7d862c24760.png')"
         }}
       >
-        <div className="absolute inset-0 hero-gradient"></div>
+        <div className="absolute inset-0 bg-black/40"></div>
       </div>
 
       <div className="container mx-auto px-4 z-10 text-center">
