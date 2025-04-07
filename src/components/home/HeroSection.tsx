@@ -1,17 +1,11 @@
-
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-
 const HeroSection = () => {
-  return (
-    <div className="relative h-[80vh] flex items-center justify-center overflow-hidden bg-gray-900">
+  return <div className="relative h-[80vh] flex items-center justify-center overflow-hidden bg-gray-900">
       {/* Background image with overlay */}
-      <div 
-        className="absolute inset-0 z-0 bg-cover bg-center"
-        style={{
-          backgroundImage: "url('20250406_190446.jpg')"
-        }}
-      >
+      <div className="absolute inset-0 z-0 bg-cover bg-center" style={{
+      backgroundImage: "url('20250406_190446.jpg')"
+    }}>
         <div className="absolute inset-0 bg-black/40"></div>
       </div>
 
@@ -26,13 +20,11 @@ const HeroSection = () => {
           <Button asChild size="lg" className="bg-maroon hover:bg-maroon/90 text-white">
             <Link to="/classes">Explore Classes</Link>
           </Button>
-          <Button asChild size="lg" className="bg-maroon hover:bg-maroon/90 text-white">
+          <Button asChild size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-maroon">
             <Link to="/events">Upcoming Events</Link>
           </Button>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default HeroSection;
