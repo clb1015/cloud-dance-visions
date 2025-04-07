@@ -20,7 +20,7 @@ const HeroSection = () => {
           <Button asChild size="lg" className="bg-maroon hover:bg-maroon/90 text-white">
             <Link to="/classes">Explore Classes</Link>
           </Button>
-          <Button asChild size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-maroon">
+          <Button asChild size="lg" className="bg-maroon hover:bg-maroon/90 text-white">
             <Link to="/events">Upcoming Events</Link>
           </Button>
         </div>
