@@ -1,10 +1,11 @@
+
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 const HeroSection = () => {
   return <div className="relative h-[80vh] flex items-center justify-center overflow-hidden bg-gray-900">
       {/* Background image with overlay */}
       <div className="absolute inset-0 z-0 bg-cover bg-center" style={{
-      backgroundImage: "url('IMG_0269.png')"
+      backgroundImage: "url('/lovable-uploads/2df91e62-8a3b-4708-8341-93fc5f974cb7.png')"
     }}>
         <div className="absolute inset-0 bg-black/40"></div>
       </div>
